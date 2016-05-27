@@ -1,0 +1,19 @@
+// = = = =  SERVER SIDE = = = = = 
+add_action('wp_ajax_nopriv_cookie_check', 'cookie_check');
+add_action('wp_ajax_cookie_check', 'cookie_check');
+function cookie_check(){
+	wp_send_json_success('Test');
+};
+
+
+// jQuery ajax dump exemple
+var test = {action: 'cookjax({
+      type: "POST",
+      url: cookie_check.url,
+      data: test,
+      dataType: 'json',
+      success: function(response) {
+        console.log(response);
+      }
+
+    });
