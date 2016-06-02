@@ -1,0 +1,1 @@
+bp_is_my_profile() -- my id?
