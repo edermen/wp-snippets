@@ -1,1 +1,15 @@
-bp_is_my_profile() -- my id?
+//checking is my profile page
+bp_is_my_profile()
+
+// display current id user
+bp_get_member_user_id()
+
+
+// check user friends
+bp_is_user_friends()
+
+// ids list of friends
+$friends = friends_get_friend_user_ids($user_id);
+
+// update XprofileField
+xprofile_set_field_data()
