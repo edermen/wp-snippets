@@ -13,3 +13,15 @@ $friends = friends_get_friend_user_ids($user_id);
 
 // update XprofileField
 xprofile_set_field_data()
+
+// get data
+$args = array(
+'field'   => 'Role',
+'user_id' => bp_loggedin_user_id()
+);
+
+$role = bp_get_profile_field_data( $args );
+
+// SQL
+//$PREFIX_bp_xprofile_data
+$bp->profile->table_name_data 

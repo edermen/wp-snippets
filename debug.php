@@ -9,3 +9,13 @@
   var_dump($wp_scripts);
 // EN DEBUG
 ?>
+
+
+
+// SIMPLE TEST HOOKS
+<?php
+function test_filter() {
+	return "SOlli!";
+}
+add_filter('the_title', 'test_filter', 40);
+?>
